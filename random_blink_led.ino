@@ -4,6 +4,10 @@
 
   It picks 2 numbers from 0 to 100. If the first divided by 2
   is greater than the secondo, the led will be turned on and off.
+
+  Author: Lorenzo Setale ( koalalorenzo@gmail.com )
+  Author Website: http://who.is.lorenzo.setale.me/?
+  Italian blog post about this script: http://wp.me/p2OW0y-4H3
  */
  
 int random_int_in_range (unsigned int min, unsigned int max)
