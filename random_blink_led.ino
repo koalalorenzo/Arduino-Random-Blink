@@ -18,14 +18,13 @@ int random_int_in_range (unsigned int min, unsigned int max)
     return random_int_in_range(min, max);
   
   int range       = max - min;
-  int remainder   = RAND_MAX % range,
+  int remainder   = RAND_MAX % range;
   int bucket      = RAND_MAX / range;
   if (base_random < RAND_MAX - remainder) {
     return min + base_random/bucket;
   } else {
     return random_int_in_range(min, max);
   }
-
 } 
  
 // Pin 13 has an LED connected on most Arduino boards.
